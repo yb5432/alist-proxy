@@ -10,4 +10,4 @@ LABEL MAINTAINER="i@nn.ci"
 WORKDIR /app/
 COPY --from=builder /app/bin/alist-proxy ./
 EXPOSE 5243
-CMD [ "./alist-proxy" ]
+ENTRYPOINT [ "./entrypoint.sh" ]
